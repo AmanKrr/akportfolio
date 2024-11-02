@@ -1,0 +1,28 @@
+@import "../_fonts";
+
+div.alphabetsContainer {
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  span.alphaChar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0.4rem;
+    font-family: $primaryFont;
+    font-weight: $bld-l4;
+    color: rgb(228, 228, 228);
+    background-color: rgba(240, 248, 255, 0.306);
+    padding: 0.5rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    backdrop-filter: blur(40px);
+    webkit-backdrop-filter: blur(40px);
+  }
+}

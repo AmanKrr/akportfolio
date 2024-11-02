@@ -1,0 +1,96 @@
+@import "../_fonts";
+
+div.authorTitleContainer {
+  display: flex;
+  flex-direction: column;
+
+  div.wrapperName {
+    display: flex;
+    font-family: $primaryFont;
+    font-weight: $bld-l8;
+    line-height: 1;
+    font-size: 22rem;
+    white-space: nowrap;
+
+    span.randomChars {
+      opacity: 0.3;
+      -webkit-text-fill-color: black;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: white;
+    }
+  }
+
+  div.wrapperFirstName {
+    div.firstName {
+      font-family: $primaryFont;
+      font-weight: $bld-l8;
+      line-height: 1;
+      font-size: 22rem;
+    }
+  }
+
+  div.wrapperLastName {
+    div.lastName {
+      font-family: $primaryFont;
+      font-weight: $bld-l8;
+      font-size: 22rem;
+      line-height: 1;
+      // margin-top: -4.6rem;
+      margin-left: -0.4rem;
+    }
+  }
+}
+
+// div.authorTitleContainer:hover {
+//   background-color: aqua;
+//   border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+//   clip-path: polygon(
+//     50% 0%,
+//     100% 50%,
+//     50% 100%,
+//     0% 50%
+//   ); /* Use the same shape values as your .bubble class */
+// }
+
+@media only screen and (max-width: 425px) {
+  div.authorTitleContainer {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(90deg);
+
+    div.wrapperName {
+      display: flex;
+      font-family: $primaryFont;
+      font-weight: $bld-l8;
+      line-height: 1;
+      font-size: 8rem;
+
+      span.randomChars {
+        opacity: 0.3;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+      }
+    }
+
+    div.wrapperFirstName {
+      div.firstName {
+        font-family: $primaryFont;
+        font-weight: $bld-l8;
+        line-height: 1;
+        font-size: 8rem;
+      }
+    }
+
+    div.wrapperLastName {
+      div.lastName {
+        font-family: $primaryFont;
+        font-weight: $bld-l8;
+        font-size: 8rem;
+        line-height: 1;
+        // margin-top: -4.6rem;
+        margin-left: -0.4rem;
+      }
+    }
+  }
+}
